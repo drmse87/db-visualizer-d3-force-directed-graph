@@ -1,6 +1,8 @@
 # DB Visualizer
 DB Visualizer is a simple web app visualizing a SQL database with all of its tables and dependencies. It also has grouping, search and filter functionality. The app was built with [D3 force-directed graph](https://observablehq.com/@d3/force-directed-graph), TypeScript, ASP.NET Core and Sass.
 
+![DB Visualizer](https://github.com/drmse87/db-visualizer-d3-force-directed-graph/blob/master/docs/showcase.png "DB Visualizer")
+
 # Get started
 ## Develop
 1. `npm install`
