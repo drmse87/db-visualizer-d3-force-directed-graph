@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Visualizer</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+</head>
+<body>
+    <img src="img/graph.png" alt="Logo" id="logo">
+    <div class="control-panel">
+        <button class="control-panel-button"></button>
+        <div class="filter">
+            <span class="icon-filter"></span><h1>Filter</h1>
+            <div class="filter-groups">
+                <h2>By group</h2>
+                <ul class="filter-groups-list"></ul>
+                <label>
+                    <span>Show all</span>
+                    <input type="checkbox" class="filter-groups-toggle-all" checked>
+                </label>
+            </div>
+            <div class="filter-date">
+                <h2>By date</h2>
+                <select class="filter-date-select">
+                    <option value="all">Show all</option>
+                    <option value="thisMonth">Created this month</option>
+                    <option value="thisYear">Created this year</option>
+                    <option value="olderThanYear">Created more than a year ago</option>
+                    <option value="olderThanThreeYears">Created more than three years</option>
+                </select>
+            </div>
+        </div>
+        <div class="search">
+            <span class="icon-search"></span><h1>Search</h1>
+            <label>
+                Tables
+                <input type="radio" name="search-for" value="table" checked>
+            </label>
+            <label>
+                Columns
+                <input type="radio" name="search-for" value="column">
+            </label>            
+            <input type="search" name="" class="search-field" placeholder="Sökord..."> 
+        </div>
+    </div>
+    <div class="chart-container"></div>    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="/js/app.js" type="module"></script>
+</body>
+</html>

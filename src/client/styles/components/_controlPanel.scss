@@ -1,0 +1,23 @@
+.control-panel {
+    &.control-panel-minimized {
+        visibility: hidden;
+
+        .control-panel-button {
+            visibility: visible;
+            background-image: url(/img/menu.svg);
+        }
+    }
+
+    .control-panel-button {
+        cursor: pointer;
+        background-color: transparent;
+        background-image: url(/img/window-minimize.svg);
+        background-size: 100% 100%;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        border: none;
+    }
+}
